@@ -1,4 +1,4 @@
-FROM amirshams/centos
+FROM amirshams/centos7
 FROM amirshams/python2.7
 FROM amirshams/mothur
 
