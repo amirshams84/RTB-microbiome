@@ -1,6 +1,7 @@
 FROM amirshams/centos7
 FROM amirshams/python2.7
 FROM amirshams/mothur
+FROM amirshams/javascript
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
 
