@@ -2,6 +2,7 @@ FROM amirshams/centos7:2.0
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
 
+RUN mkdir -p exec
 ##############################################################
 # Software:             mothur
 # Software Version:     1.38.0
@@ -13,7 +14,8 @@ RUN wget https://github.com/mothur/mothur/releases/download/v1.38.1/Mothur.linux
     unzip Mothur.linux_64.zip && \
     rm Mothur.linux_64.zip && \
     rm -rf __MACOSX && \
-    mv /mothur/ /exec/
+    mv /mothur/mothur /exec/ && \
+    rm -rf /mothur
 
 #adds executables to the path
 #ENV PATH /mothur:$PATH
