@@ -22,7 +22,7 @@ ENV PATH /mothur:$PATH
 # Software:             javascript
 # Software Version:     1.0
 # Software Website:     -
-# Description:          requaired javascript libraray
+# Description:          required javascript libraray
 ##############################################################
 RUN mkdir -p javascript ;
 RUN cd javascript ;
