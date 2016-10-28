@@ -1,7 +1,6 @@
-FROM amirshams/centos7
+FROM amirshams/centos7:2.0
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
-
 
 ##############################################################
 # Software:             mothur
