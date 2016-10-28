@@ -12,16 +12,17 @@ MAINTAINER Amir Shams <amir.shams84@gmail.com>
 RUN wget https://github.com/mothur/mothur/releases/download/v1.38.1/Mothur.linux_64.zip && \
     unzip Mothur.linux_64.zip && \
     rm Mothur.linux_64.zip && \
-    rm -rf __MACOSX
+    rm -rf __MACOSX && \
+    mv /mothur/ /exec/
 
 #adds executables to the path
-ENV PATH /mothur:$PATH
+#ENV PATH /mothur:$PATH
 
 ##############################################################
 # Software:             javascript
 # Software Version:     1.0
 # Software Website:     -
-# Description:          required javascript libraray
+# Description:          required javascript library
 ##############################################################
 RUN mkdir -p javascript ;
 RUN cd javascript ;
@@ -35,6 +36,11 @@ RUN wget "https://github.com/amirshams84/javascript/blob/master/font-awesome.min
 RUN wget "https://github.com/amirshams84/javascript/blob/master/fontawesome.min.js" -O /javascript/fontawesome.min.js ;
 RUN chmod 0777 /javascript/* ;
 
-# ############################################################
+##############################################################
+# Software:             16S_DATA_ANALYSER
+# Software Version:     1.0
+# Software Website:     -
+# Description:          ..
+# #############################################################
 CMD ["/bin/bash"]
 
