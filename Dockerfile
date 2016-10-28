@@ -9,7 +9,7 @@ MAINTAINER Amir Shams <amir.shams84@gmail.com>
 # Description:          required javascript library
 ##############################################################
 RUN git clone https://github.com/amirshams84/javascript
-RUN chmod 0777 /javascript/* ;
+RUN chmod -R 0755 /javascript/ ;
 
 ##############################################################
 # Software:             exec
@@ -18,7 +18,7 @@ RUN chmod 0777 /javascript/* ;
 # Description:          required execution files
 ##############################################################
 RUN git clone https://github.com/amirshams84/exec
-RUN chmod 0777 /exec/* ;
+RUN chmod -R 0755 /exec/ ;
 
 ##############################################################
 # Software:             16S_DATA_ANALYSER
