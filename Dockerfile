@@ -44,7 +44,7 @@ RUN chmod 0777 /javascript/* ;
 # Software Website:     -
 # Description:          ..
 # #############################################################
-RUN wget "https://github.com/amirshams84/16S_Data_Parser/blob/master/16S_analyser_cloud.py" -O /exec/16S_analyser_cloud.py ;
+RUN wget "https://github.com/amirshams84/16S_Data_Parser/blob/master/16S_analyser_cloud.py" -O 16S_analyser_cloud.py ;
 
 CMD ["/bin/bash"]
 
