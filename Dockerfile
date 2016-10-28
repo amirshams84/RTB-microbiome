@@ -1,5 +1,4 @@
-ENV VERSION=2.0
-FROM amirshams/centos7:$VERSION
+FROM amirshams/centos7:2.0
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
 
