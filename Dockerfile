@@ -33,6 +33,6 @@ RUN rpm -iv http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.10.0-1.el7.ng
 EXPOSE 80 443
 
 VOLUME /usr/share/nginx/html
-
+RUN cp -R /16S_data_analyser_output/ZAC_ANALYSIS/* /usr/share/nginx/html/
 CMD ["nginx"]
 
