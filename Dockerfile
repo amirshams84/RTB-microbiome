@@ -20,13 +20,8 @@ RUN chmod -R 0755 /javascript/ ;
 RUN git clone https://github.com/amirshams84/exec
 RUN chmod -R 0755 /exec/ ;
 
-##############################################################
-# Software:             16S_DATA_ANALYSER
-# Software Version:     1.0
-# Software Website:     -
-# Description:          ..
-# #############################################################
-RUN wget "https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_analyser_cloud.py" -O 16S_analyser_cloud.py ;
+RUN git clone https://github.com/amirshams84/test_data
+RUN chmod -R 0755 /test_data/ ;
 
 CMD ["/bin/bash"]
 
