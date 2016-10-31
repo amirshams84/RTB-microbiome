@@ -23,5 +23,7 @@ RUN chmod -R 0755 /exec/ ;
 RUN git clone https://github.com/amirshams84/test_data
 RUN chmod -R 0755 /test_data/ ;
 
+VOLUME /16S_data_analyser_output
+
 CMD ["/bin/bash"]
 
