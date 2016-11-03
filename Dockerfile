@@ -1,15 +1,16 @@
 FROM amirshams/centos7:3.0
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
-
+ENV ROOT=/
+ENV CURRENT_PATH=.
 ##############################################################
 # Software:             javascript
 # Software Version:     1.0
 # Software Website:     -
 # Description:          required javascript library
 ##############################################################
-RUN git clone https://github.com/amirshams84/javascript
-RUN chmod -R 0755 /javascript/ ;
+RUN git clone https://github.com/amirshams84/javascript $CURRENT_PATH
+RUN chmod -R 0755 $CURRENT_PATH/javascript/ ;
 
 ##############################################################
 # Software:             exec
@@ -17,15 +18,15 @@ RUN chmod -R 0755 /javascript/ ;
 # Software Website:     -
 # Description:          required execution files
 ##############################################################
-RUN git clone https://github.com/amirshams84/exec
-RUN chmod -R 0755 /exec/ ;
+RUN git clone https://github.com/amirshams84/exec $CURRENT_PATH
+RUN chmod -R 0755 $CURRENT_PATH/exec/ ;
 
-RUN git clone https://github.com/amirshams84/test_data
-RUN chmod -R 0755 /test_data/ ;
+RUN git clone https://github.com/amirshams84/test_data $CURRENT_PATH
+RUN chmod -R 0755 $CURRENT_PATH/test_data/ ;
 
-VOLUME /16S_simple_analyser_results
+VOLUME $CURRENT_PATH/16S_simple_analyser_results
 
-RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_simple_analyser.py
+RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_simple_analyser.py $CURRENT_PATH
 
 CMD ["bin/bash"]
 
