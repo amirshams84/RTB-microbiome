@@ -24,8 +24,8 @@ RUN git clone https://github.com/amirshams84/test_data
 RUN chmod -R 0755 /test_data/ ;
 
 VOLUME /16S_data_analyser_output
-
-RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_data_analyser.py
+WORKDIR /
+RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_simple_analyser.py
 
 CMD ["bin/bash"]
 
