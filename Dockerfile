@@ -2,7 +2,7 @@ FROM amirshams/centos7:3.0
 
 MAINTAINER Amir Shams <amir.shams84@gmail.com>
 ENV ROOT=/
-ENV CURRENT_PATH=.
+ENV CURRENT_PATH=./
 ##############################################################
 # Software:             javascript
 # Software Version:     1.0
