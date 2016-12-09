@@ -26,7 +26,7 @@ RUN chmod -R 0755 $CURRENT_PATH/test_data/ ;
 
 VOLUME $CURRENT_PATH/16S_simple_analyser_results
 
-RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/16S_simple_analyser.py -P $CURRENT_PATH/
+RUN wget https://raw.githubusercontent.com/amirshams84/16S_Data_Parser/master/microbiome_slicer.py -P $CURRENT_PATH/
 
 CMD ["bin/bash"]
 
